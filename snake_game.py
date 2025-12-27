@@ -151,4 +151,10 @@ while True: # Game loop
     screen.update()
     time.sleep(delay)
 
+# End screen
+text = turtle.Turtle()
+text.setpos(0,0)
+text.hideturtle()
+text.write(f"Game Over\nScore: {score}", align="center", font=("Terminal", 20, "bold"))
+
 screen.mainloop()
